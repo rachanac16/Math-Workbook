@@ -79,7 +79,7 @@
     font-size: 1rem;
     color: #fff;
     &:focus,
-    &:hover {color: rgba(255,255,255,.5);}
+      &:hover {color: rgba(255,255,255,.5);}
   }
   .signup__form {
     padding: 2.5rem;

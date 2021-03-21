@@ -1303,7 +1303,7 @@ textarea:focus {
 }
 
 .navbar-brand img {
-  width: 150px;
+  width: 100px;
 }
 
 @media (max-width: 767px) {
@@ -2394,11 +2394,61 @@ footer css
   padding: 35px 30px;
 }
 
-.signup__link {
-  font-size: .80rem;
-  font-weight: 600;
-  text-decoration: underline;
-  color: #999;
-  &:focus,
-  &:hover {color: darken(#999, 13%);}
+.tab-content > div:last-child {
+  display:none;
+}
+
+.tab-content h1{
+  margin: 0 0 40px;
+}
+
+.tab-group {
+  list-style:none;
+  padding:0;
+  margin:0 0 40px 0;
+}
+.tab-group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.tab-group .active a {
+  background:#F2A92C;
+  color:#ffffff;
+}
+
+.tab-group li a {
+  display:block;
+  text-decoration:none;
+  padding:15px;
+  font-size:20px;
+  color: #283747;
+  float:left;
+  width:50%;
+  text-align:center;
+  cursor:pointer;
+  transition:.5s ease;
+}
+.tab-group li a:hover {
+  background:#F2A92C;
+  color:#ffffff;
+}
+
+form .signup{
+  background-color: #F2A92C;
+  color: #fff;
+  margin: 0 0 10px;
+}
+.signup:hover{
+  background-color: #f2a92cef;
+  color: #fff;
+  transition: all 0.3s ease-out 0s;
+  
+}
+
+.v1{
+  border-radius: 50px;
+  background-color: #ddd5d5;
+  padding: 10px;
 }

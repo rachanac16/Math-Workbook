@@ -60,9 +60,9 @@
 				<div class="row align-items-center">
 					<div class="col-xl-12">
 						<nav class="navbar navbar-expand-lg">
-							<!-- <a class="navbar-brand" href="index.html">
+							<a class="navbar-brand" href="index.html">
 								<img id="logo" src="assets/images/logo.png" alt="Logo">
-							</a> -->
+							</a>
 							<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
 								aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 								<span class="toggler-icon"></span>
@@ -78,7 +78,7 @@
 										<a class="page-scroll" href="#courses">Courses</a>
 									</li>
 									<li class="nav-item">
-										<a class="page-scroll" href="SignUpRegisterForm.html">Sign In/Register</a>
+										<a href="SignUpRegisterForm.html">Sign In/Register</a>
 									</li>
 									<li class="nav-item">
 										<a class="page-scroll" href="#contact">Contact</a>
@@ -105,7 +105,7 @@
 						<h2 class="mb-30 wow fadeInUp" data-wow-delay=".2s">Maths Workbook</h2>
 						<p class="wow fadeInUp" data-wow-delay=".4s">The only place where Maths can be fun!!</p>
 						<div class="hero-btns">
-							<a href="#courses" class="main-btn wow fadeInUp" data-wow-delay=".6s">Sign me up!</a>
+							<a href="SignUpRegisterForm.html" class="main-btn wow fadeInUp" data-wow-delay=".6s">Sign me up!</a>
 						</div>
 					</div>
 				</div>
@@ -500,9 +500,9 @@
 	<!--====== TEAM PART ENDS ======-->
 
 	<!--====== TESTIMONIAL PART START ======-->
-	<section class="testimonial-area pt-80 pb-90">
+	<!-- <section class="testimonial-area pt-80 pb-90">
 
-	</section>
+	</section> -->
 	<!--====== TESTIMONIAL PART ENDS ======-->
 
 	<!--====== BLOG PART START ======-->
@@ -714,12 +714,14 @@
 
     // section menu active
     function onScroll(event) {
+		console.log("onscroll called");
         var sections = document.querySelectorAll('.page-scroll');
         var scrollPos = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
 
         for (var i = 0; i < sections.length; i++) {
             var currLink = sections[i];
             var val = currLink.getAttribute('href');
+			// console.log(val);
             var refElement = document.querySelector(val);
             var scrollTopMinus = scrollPos + 73;
             if (refElement.offsetTop <= scrollTopMinus && (refElement.offsetTop + refElement.offsetHeight > scrollTopMinus)) {
