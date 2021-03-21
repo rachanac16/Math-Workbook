@@ -9,7 +9,7 @@
     
     </head>
 
-    <body style="background-color: #ffdead;" onload="nextQuestion()">
+    <body style="background-color: #fcd12a;" onload="nextQuestion()">
 
         <div class="progress-wrapper">
   
@@ -64,7 +64,7 @@
         </div>
 
 
-        <div class="display">
+        <div class="display" style="margin-top: 75px;">
           <div class="question">
             <p><span id="x">X</span> <span id="op">+</span> <span id="y">Y</span> = </p>
           </div>
@@ -72,25 +72,51 @@
             <input type="text" placeholder="Enter Your Answer Here!" style="font-size:30px; margin:20px;">
           </div>
           <div class="next" style="margin-top: 40px;">
-            <button class="btn btn-md btn-info" style="margin-right:50px;" onclick="prevQuestion()"><i class="fa fa-arrow-left" aria-hidden="true"></i>
+            <button class="btn btn-lg btn-info" style="margin-right:50px;" onclick="prevQuestion()"><i class="fa fa-arrow-left" aria-hidden="true"></i>
               <strong style="margin-left:5px;">Previous Question</strong></button>
-            <button class="btn btn-md btn-info" id="nextQ" onclick="nextQuestion()"> <strong style="margin-right:5px;">Next Question</strong><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+            <button class="btn btn-lg btn-info" id="nextQ" onclick="nextQuestion()"> <strong style="margin-right:5px;">Next Question</strong><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
           </div>
-          <div class="tooltip" style="position: relative; margin-top: 30px; font-size: 30px;"></div>
-            SEE HINT
-            <span class="tooltiptext">This is a hint</span>
-          </div>
-          <div id="hidden" style="margin-top: 40px; display: none;">
-            <button class="btn btn-lg btn-success" onclick="seeResult()"><strong style="margin-right: 5px;">See Results</strong>  <i class="fa fa-star" aria-hidden="true"></i></button>
+          <div id="hidden" style="display: none; margin-top: 30px;">
+            <button class="btn btn-lg btn-secondary" onclick="seeResult()"><strong style="margin-right: 5px;">See Results</strong>  <i class="fa fa-star" aria-hidden="true"></i></button>
           </div>
         </div>
+        <div class="hint">
+          <div class="btn btn-dark btn-lg rounded-circle" onmouseover="showHint()" onmouseout="hideHint()"> 
+            <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+          </div>
+        </div>
+        <span class="show" id="hover">While adding two numbers, always start from the units place. Then keep adding the numbers in higher places by taking care of the carry until you get an answer! </span>
+
+        
 
         <div id="result">
           <div class="photo">
-            <img src="C:\Users\aser\Desktop\report.jpg" style="width: 500px; height: 600px;">
+            <img src="C:\Users\aser\Desktop\report.jpg" style="width: 600px; height: 500px;">
           </div>
           <div id="score" style="margin-left: 50px;">
-            <p id="message"></p>
+            <span id="msg">Here are your results!</span>
+            <table>
+              <tr>
+                <td>Score</td>
+                <td id="message"></td>
+              </tr>
+              <tr>
+                <td>Time Taken</td>
+                <td>00:02:45</td>  
+              </tr>
+              <tr>
+                <td>Time Bonus</td>
+                <td>500</td> 
+              </tr>
+              <tr>
+                <td>Total Stars</td>  
+                <td id="stars"></td>
+              </tr>
+            </table>
+            <div id="buttons">
+              <button class="btn btn-secondary btn-md">Take a Test</button>
+              <button class="btn btn-secondary btn-lg" style="margin-left: 10px;"><i class="fa fa-share-alt" aria-hidden="true"></i></button>
+            </div>
           </div>
         </div>
         
