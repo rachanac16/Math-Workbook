@@ -54,16 +54,15 @@
 	<!--====== PRELOADER PART ENDS ======-->
 
 	<!--====== HEADER PART START ======-->
-
 	<header class="header_area">
 		<div id="header_navbar" class="header_navbar">
 			<div class="container">
 				<div class="row align-items-center">
 					<div class="col-xl-12">
 						<nav class="navbar navbar-expand-lg">
-							<a class="navbar-brand" href="index.html">
-								<img id="logo" src="assets/images/logo.svg" alt="Logo">
-							</a>
+							<!-- <a class="navbar-brand" href="index.html">
+								<img id="logo" src="assets/images/logo.png" alt="Logo">
+							</a> -->
 							<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
 								aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 								<span class="toggler-icon"></span>
@@ -79,10 +78,7 @@
 										<a class="page-scroll" href="#courses">Courses</a>
 									</li>
 									<li class="nav-item">
-										<a class="page-scroll" href="#mentors">Sign In</a>
-									</li>
-									<li class="nav-item">
-										<a class="page-scroll" href="#blog">Register</a>
+										<a class="page-scroll" href="SignUpRegisterForm.html">Sign In/Register</a>
 									</li>
 									<li class="nav-item">
 										<a class="page-scroll" href="#contact">Contact</a>
@@ -98,7 +94,6 @@
 			</div> <!-- container -->
 		</div> <!-- header navbar -->
 	</header>
-
 	<!--====== HEADER PART ENDS ======-->
 
 	<!--====== HERO PART START ======-->
@@ -110,14 +105,14 @@
 						<h2 class="mb-30 wow fadeInUp" data-wow-delay=".2s">Maths Workbook</h2>
 						<p class="wow fadeInUp" data-wow-delay=".4s">The only place where Maths can be fun!!</p>
 						<div class="hero-btns">
-							<a href="#courses" class="main-btn wow fadeInUp" data-wow-delay=".6s">Let's GO!</a>
+							<a href="#courses" class="main-btn wow fadeInUp" data-wow-delay=".6s">Sign me up!</a>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 		<div class="hero-left">
-			<img src="assets/images/hero-img.png" alt="">
+			<img src="assets/images/cover.jpg" alt="">
 			<img src="assets/images/dot-shape.svg" alt="" class="shape">
 		</div>
 	</section>
@@ -180,8 +175,7 @@
 				<div class="col-xl-6 col-lg-7 col-md-10 mx-auto">
 					<div class="section-title text-center mb-50">
 						<h2 class="mb-15 wow fadeInUp" data-wow-delay=".2s">Popular Courses</h2>
-						<p class="wow fadeInUp" data-wow-delay=".4s">eStore UI Kit comes with all essential features, sections and elements you need
-							to design and develop web UI efficiently.</p>
+						<p class="wow fadeInUp" data-wow-delay=".4s">All courses will be curated to the child's needs</p>
 					</div>
 				</div>
 			</div>
@@ -190,11 +184,11 @@
 					<div class="single-course wow fadeInUp" data-wow-delay=".2s">
 						<div class="course-img">
 							<a href="course-single.html">
-								<img src="assets/images/course/full-stack.jpg" alt="">
+								<img src="assets/images/course/profitloss.png" alt="">
 							</a>
 						</div>
 						<div class="course-info">
-							<h4><a href="course-single.html">Full-stack Web Development</a></h4>
+							<h4><a href="course-single.html" onclick="sessionStorage.setItem('course_name', 'Profit and Loss')">Profit and Loss</a></h4>
 							<div class="course-meta">
 								<div class="meta-item">
 									<i class="lni lni-user"></i>
@@ -219,11 +213,11 @@
 					<div class="single-course wow fadeInUp" data-wow-delay=".4s">
 						<div class="course-img">
 							<a href="course-single.html">
-								<img src="assets/images/course/design.jpg" alt="">
+								<img src="assets/images/course/allinone.png" alt="">
 							</a>
 						</div>
 						<div class="course-info">
-							<h4><a href="course-single.html">UX/UI Design</a></h4>
+							<h4><a href="course-single.html" onclick="sessionStorage.setItem('course_name', 'All in One')">All in One</a></h4>
 							<div class="course-meta">
 								<div class="meta-item">
 									<i class="lni lni-user"></i>
@@ -248,11 +242,11 @@
 					<div class="single-course wow fadeInUp" data-wow-delay=".6s">
 						<div class="course-img">
 							<a href="course-single.html">
-								<img src="assets/images/course/js.jpg" alt="">
+								<img src="assets/images/course/Statistics.png" alt="">
 							</a>
 						</div>
 						<div class="course-info">
-							<h4><a href="course-single.html">Modern JavaScript</a></h4>
+							<h4><a href="course-single.html" onclick="sessionStorage.setItem('course_name', 'Statistics')">Statistics</a></h4>
 							<div class="course-meta">
 								<div class="meta-item">
 									<i class="lni lni-user"></i>
@@ -279,11 +273,11 @@
 					<div class="single-course wow fadeInUp" data-wow-delay=".2s">
 						<div class="course-img">
 							<a href="course-single.html">
-								<img src="assets/images/course/business.jpg" alt="">
+								<img src="assets/images/course/Arithmetic.png" alt="">
 							</a>
 						</div>
 						<div class="course-info">
-							<h4><a href="course-single.html">Business Development</a></h4>
+							<h4><a href="course-single.html" onclick="sessionStorage.setItem('course_name', 'Arithmetics')">Arithmetics</a></h4>
 							<div class="course-meta">
 								<div class="meta-item">
 									<i class="lni lni-user"></i>
@@ -308,11 +302,11 @@
 					<div class="single-course wow fadeInUp" data-wow-delay=".4s">
 						<div class="course-img">
 							<a href="course-single.html">
-								<img src="assets/images/course/marketing.jpg" alt="">
+								<img src="assets/images/course/Geometry.png" alt="">
 							</a>
 						</div>
 						<div class="course-info">
-							<h4><a href="course-single.html">Email Marketing 101</a></h4>
+							<h4><a href="course-single.html" onclick="sessionStorage.setItem('course_name', 'Basic Geometry')">Basic Geometry</a></h4>
 							<div class="course-meta">
 								<div class="meta-item">
 									<i class="lni lni-user"></i>
@@ -337,11 +331,11 @@
 					<div class="single-course wow fadeInUp" data-wow-delay=".6s">
 						<div class="course-img">
 							<a href="course-single.html">
-								<img src="assets/images/course/python.jpg" alt="">
+								<img src="assets/images/course/speedmath.png" alt="">
 							</a>
 						</div>
 						<div class="course-info">
-							<h4><a href="course-single.html">Getting Started with Python</a></h4>
+							<h4><a href="course-single.html" onclick="sessionStorage.setItem('course_name', 'Speed Maths')">Speed Maths</a></h4>
 							<div class="course-meta">
 								<div class="meta-item">
 									<i class="lni lni-user"></i>
@@ -364,13 +358,13 @@
 				</div>
 			</div>
 			
-			<div class="row">
+			<!-- <div class="row">
 				<div class="col-xl-12">
 					<div class="view-all-btn text-center">
 						<a href="courses.html" class="main-btn">View All Course</a>
 					</div>
 				</div>
-			</div>
+			</div> -->
 		</div>
 	</section>
 	<!--====== COURSES PART ENDS ======-->
@@ -403,7 +397,7 @@
 	<!-- ====== WELCOME PART ENDS ====== -->
 
 	<!--====== CATEGORIES PART START ======-->
-	<section class="categories-area pt-170 pb-170">
+	<!-- <section class="categories-area pt-170 pb-170">
 		<div class="container">
 			<div class="row">
 				<div class="col-xl-8 col-lg-10 mx-auto">
@@ -487,11 +481,11 @@
 				</div>
 			</div>
 		</div>
-	</section>
+	</section> -->
 	<!--====== CATEGORIES PART ENDS ======-->
 
 	<!--====== TEAM PART START ======-->
-	<section id="mentors" class="team-area pt-170 pb-140">
+	<!-- <section id="mentors" class="team-area pt-170 pb-140">
 					<div class="welcome-content text-center">
 						<div class="section-title">
 							<h2 class="mb-35 wow fadeInUp" data-wow-delay=".2s">You are using free lite version of Learn</h2>
@@ -502,7 +496,7 @@
 							<a href="https://rebrand.ly/learn-ud" rel="nofollow" class="main-btn wow fadeInUp" data-wow-delay=".5s">Purchase Now <i class="lni lni-arrow-right"></i></a>
 						</div>
 					</div>
-	</section>
+	</section> -->
 	<!--====== TEAM PART ENDS ======-->
 
 	<!--====== TESTIMONIAL PART START ======-->
@@ -627,9 +621,9 @@
 				<div class="col-xl-3 col-lg-3 col-md-6">
 					<div class="footer-widget">
 						<a href="index.html" class="logo d-blok">
-							<img src="assets/images/logo.svg" alt="">
+							<img src="assets/images/logo.png" alt="">
 						</a>
-						<p>Lorem ipsum dolor sit amco nsetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna .</p>
+						<p>Maths Workbook</p>
 					</div>
 				</div>
 				<div class="col-xl-2 col-lg-2 offset-xl-1 offset-lg-1 col-md-6">
@@ -638,8 +632,6 @@
 						<ul>
 							<li><a href="javascript:void(0)">Home</a></li>
 							<li><a href="javascript:void(0)">Courses</a></li>
-							<li><a href="javascript:void(0)">Eventd</a></li>
-							<li><a href="javascript:void(0)">Blog</a></li>
 						</ul>
 					</div>
 				</div>
@@ -647,10 +639,10 @@
 					<div class="footer-widget">
 						<h5>Our Course</h5>
 						<ul>
-							<li><a href="javascript:void(0)">Design</a></li>
-							<li><a href="javascript:void(0)">Development</a></li>
-							<li><a href="javascript:void(0)">Marketing</a></li>
-							<li><a href="javascript:void(0)">SEO Design</a></li>
+							<li><a href="javascript:void(0)">Arithmetic</a></li>
+							<li><a href="javascript:void(0)">Speed Maths</a></li>
+							<li><a href="javascript:void(0)">Geometry</a></li>
+							<li><a href="javascript:void(0)">Statistics</a></li>
 						</ul>
 					</div>
 				</div>
@@ -660,7 +652,7 @@
 						<ul>
 							<li><p>Phone: +884-9273-3867</p></li>
 							<li><p>Email: hello@gmail.com</p></li>
-							<li><p>Address: Random Road<br> USA</p></li>
+							<li><p>Address: Random Road<br> India</p></li>
 						</ul>
 					</div>
 				</div>
@@ -669,7 +661,7 @@
 				<div class="row">
 					<div class="col-md-6">
 						<div class="copy-right text-center text-md-left">
-							<p>Designed and Developed by <a href="https://uideck.com" rel="nofollow">UIdeck</a></p>
+							<p>Designed and Developed by Ritwik Jog and Rachana Chaudhari</p>
 						</div>
 					</div>
 					<div class="col-md-6">
@@ -704,7 +696,7 @@
 
 	<script>
 
-
+	// include file="include_head.html" 
     // Get the navbar
 
     // for menu scroll 
