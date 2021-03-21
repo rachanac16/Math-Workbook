@@ -114,15 +114,24 @@ function seeResult(){
     res.style.justifyContent = "center";
     res.style.alignItems = "center";
     
-    if(sum >6){
-        var message = "Congrats! Your score is " + sum + "/10!!"
-    }else{
-        var message = "Your score is " + sum + "/10! Keep working hard!!"
-    }
+    var message = sum + "/10";
+
+    var stars = sum*10 + 500;
 
     document.getElementById("message").innerHTML = message;
+    document.getElementById("stars").innerHTML = stars;
     document.getElementsByTagName("body")[0].style.width = "100%";
     document.getElementsByClassName("progress-wrapper")[0].style.display = "none";
     document.getElementsByClassName("display")[0].style.display = "none";
+    document.getElementsByClassName("hint")[0].style.display = "none";
+
+}
+
+function showHint(){
+    document.getElementById("hover").style.display = "inline";
+}
+
+function hideHint(){
+    document.getElementById("hover").style.display = "none";
 
 }

@@ -33,7 +33,7 @@ i {
 }
 
 .wrong {
-    background-color:#F06755;
+    background-color:red;
 }
 
 .fa-close {
@@ -43,7 +43,7 @@ i {
 }
 
 .right {
-    background-color:#A4C88D;
+    background-color:green;
 }
 
 .fa-check {
@@ -67,11 +67,11 @@ i {
     margin-top: 50px;
     width:70%;
     height: 100px;
-    /* background-color: #3b3a30; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
 }
 
 p{
@@ -80,7 +80,7 @@ p{
 
 input{
     height: 50px;
-    background-color: #ffdead;
+    background-color:#fcd12a;
     font-family: 'roboto';
     border:none;
     font-size:50px;
@@ -106,4 +106,47 @@ a{
     align-items: center;
     justify-content: center; */
     margin-top: 50px;
+}
+
+#score{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+
+
+.hint{
+    position: relative;
+    margin-top: 180px;
+    border-radius: 50%;
+    margin-left: 1000px;
+}
+
+.show{
+    padding:5px;
+    background-color: rgba(36, 32, 32, 0.5);
+    display:none;
+    color:white;
+}
+
+table{
+    margin:50px;
+    font-size: 30px;
+}
+
+table tr td{
+    border:2px solid black;
+    border-collapse: collapse;
+}
+
+td{
+    padding:10px;
+    text-align: center;
+    font-family: serif;
+}
+
+#msg{
+    font-size: 30px;
+    font-family: cursive;
 }
