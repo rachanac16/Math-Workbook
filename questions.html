@@ -1,0 +1,125 @@
+<html>
+    <head>
+        <title>Questions</title>
+        <link rel="stylesheet" href="questions.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="questions.js"></script>
+        <!-- <script type="module" src="result.js"></script> -->
+    
+    </head>
+
+    <body style="background-color: #FFC861;" onload="nextQuestion()">
+
+        <div class="progress-wrapper">
+  
+            <div class="progress-1 progress-point">
+            </div>
+            <div class="progress-waypoint">
+            </div>
+            
+            <div class="progress-2 progress-point"> 
+            </div>
+            <div class="progress-waypoint">
+            </div>
+            
+            <div class="progress-3 progress-point">
+            </div>
+            <div class="progress-waypoint">
+            </div>
+            
+            <div class="progress-4 progress-point">
+            </div>
+            <div class="progress-waypoint">
+            </div>
+            
+            <div class="progress-5 progress-point">
+            </div>
+            <div class="progress-waypoint">
+            </div>
+
+            <div class="progress-6 progress-point">
+              </div>
+              <div class="progress-waypoint">
+            </div>
+
+            <div class="progress-7 progress-point">
+              </div>
+              <div class="progress-waypoint">
+            </div>
+
+            <div class="progress-8 progress-point">
+              </div>
+              <div class="progress-waypoint">
+            </div>
+
+            <div class="progress-9 progress-point">
+              </div>
+              <div class="progress-waypoint">
+            </div>
+
+            <div class="progress-10 progress-point">
+              </div>
+    
+        </div>
+
+
+        <div class="display" style="margin-top: 75px;">
+          <div class="question">
+            <p><span id="x">X</span> <span id="op">+</span> <span id="y">Y</span> = </p>
+          </div>
+          <div class="answer">
+            <input type="text" placeholder="Enter Your Answer Here!" style="font-size:30px; margin:20px;">
+          </div>
+          <div class="next" style="margin-top: 40px;">
+            <button class="btn btn-lg btn-info" style="margin-right:50px;" onclick="prevQuestion()"><i class="fa fa-arrow-left" aria-hidden="true"></i>
+              <strong style="margin-left:5px;">Previous Question</strong></button>
+            <button class="btn btn-lg btn-info" id="nextQ" onclick="nextQuestion()"> <strong style="margin-right:5px;">Next Question</strong><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+          </div>
+          <div id="hidden" style="display: none; margin-top: 30px;">
+            <button class="btn btn-lg btn-secondary" onclick="seeResult()"><strong style="margin-right: 5px;">See Results</strong>  <i class="fa fa-star" aria-hidden="true"></i></button>
+          </div>
+        </div>
+        <div class="hint">
+          <div class="btn btn-dark btn-lg rounded-circle" onmouseover="showHint()" onmouseout="hideHint()"> 
+            <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+          </div>
+        </div>
+        <span class="show" id="hover">While adding two numbers, always start from the units place. Then keep adding the numbers in higher places by taking care of the carry until you get an answer! </span>
+
+        
+
+        <div id="result">
+          <div class="photo">
+            <img src="C:\Users\aser\Desktop\report.jpg" style="width: 600px; height: 500px;">
+          </div>
+          <div id="score" style="margin-left: 50px;">
+            <span id="msg">Here are your results!</span>
+            <table>
+              <tr>
+                <td>Score</td>
+                <td id="message"></td>
+              </tr>
+              <tr>
+                <td>Time Taken</td>
+                <td>00:02:45</td>  
+              </tr>
+              <tr>
+                <td>Time Bonus</td>
+                <td>500</td> 
+              </tr>
+              <tr>
+                <td>Total Stars</td>  
+                <td id="stars"></td>
+              </tr>
+            </table>
+            <div id="buttons">
+              <button class="btn btn-secondary btn-md">Take a Test</button>
+              <button class="btn btn-secondary btn-lg" style="margin-left: 10px; margin-right: 10px;"><i class="fa fa-share-alt" aria-hidden="true"></i></button>
+              <button class="btn btn-secondary btn-md" onclick="window.location.href='maths_workbook/course-home-page.html'">Back to Course Page</button>
+            </div>
+          </div>
+        </div>
+        
+    </body>
+</html>
