@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>Single Course</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      rel="shortcut icon"
+      href="assets/images/favicon.png"
+      type="image/png"
+    />
+
+    <link rel="stylesheet" href="assets/css/animate.css" />
+
+    <link rel="stylesheet" href="assets/css/LineIcons.2.0.css" />
+
+    <link rel="stylesheet" href="assets/css/bootstrap-5.0.5-alpha.min.css" />
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <!--[if IE]>
+      <p class="browserupgrade">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="https://browsehappy.com/">upgrade your browser</a> to improve
+        your experience and security.
+      </p>
+    <![endif]-->
+
+    <div class="preloader">
+      <div class="loader">
+        <div class="ytp-spinner">
+          <div class="ytp-spinner-container">
+            <div class="ytp-spinner-rotator">
+              <div class="ytp-spinner-left">
+                <div class="ytp-spinner-circle"></div>
+              </div>
+              <div class="ytp-spinner-right">
+                <div class="ytp-spinner-circle"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <header class="header_area">
+      <div id="header_navbar" class="header_navbar">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-xl-12">
+              <nav class="navbar navbar-expand-lg">
+                <a class="navbar-brand" href="index.html">
+                  <img id="logo" src="assets/images/logo.png" alt="Logo" />
+                </a>
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#navbarSupportedContent"
+                  aria-controls="navbarSupportedContent"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <span class="toggler-icon"></span>
+                  <span class="toggler-icon"></span>
+                  <span class="toggler-icon"></span>
+                </button>
+                <div
+                  class="collapse navbar-collapse sub-menu-bar"
+                  id="navbarSupportedContent"
+                >
+                  <ul id="nav" class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                      <a href="index.html#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="index.html#courses">Courses</a>
+                    </li>
+                    <li class="nav-item" id="signin">
+                      <a href="SignUpRegisterForm.html">Sign In/Register</a>
+                    </li>
+                    <li class="nav-item" id="signout">
+                        <a href="index.html#home" onclick="sessionStorage.setItem('username', null)">Logout</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="index.html#contact">Contact</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                      <a class="header-btn btn-hover" href="index.html#courses"
+                        >Get Started</a
+                      >
+                    </li> -->
+                  </ul>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section
+      class="page-banner pt-200 pb-100 bg_cover"
+      style="background-image: url('assets/images/hero-bg.jpg')"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="banner-content text-center">
+              <h1 class="text-white course_name">Course Single</h1>
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                  <li
+                    class="breadcrumb-item active course_name"
+                    aria-current="page"
+                  >
+                    Course
+                  </li>
+                </ol>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="course" class="course-area pt-140">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="single-course-wrapper">
+              <div class="course-title mb-30">
+                <h3 class="mb-20 course_name"></h3>
+                <p>You will love this course!</p>
+              </div>
+              <div class="course-img mb-30">
+                <img src="assets/images/course/learning.png" alt="" />
+              </div>
+              <div class="course-description pb-20 border-bottom">
+                <h3 class="mb-20">DESCRIPTION</h3>
+                <p class="mb-30">
+                    Geometry is a kind of mathematics that deals with shapes and figures. Geometry explains how to build or draw shapes, measure them, and compare them. People use geometry in many kinds of work, from building houses and bridges to planning space travel.
+                </p>
+                <p class="mb-30">
+                    Geometry helps us in deciding what materials to use, what design to make and also plays a vital role in the construction process itself. ... Geometrical tools like the protractor, ruler, measuring tape, and much more are used in construction work, astronomy, for measurements, drawing etc.
+                </p>
+              </div>
+              <div class="course-included pt-50 pb-50 border-bottom">
+                <h3 class="mb-20">INCLUDED IN THIS COURSE</h3>
+                <div class="row">
+                  <div class="col-md-6">
+                    <ul>
+                      <li><i class="lni lni-checkmark"></i> Basic Arithmetic</li>
+                      <li><i class="lni lni-checkmark"></i> Large number addition</li>
+                      <li><i class="lni lni-checkmark"></i> Question Sets</li>
+                      <!-- <li><i class="lni lni-checkmark"></i>Rectangles</li> -->
+                    </ul>
+                  </div>
+                  <!-- <div class="col-md-6">
+                    <ul>
+                      <li>
+                        <i class="lni lni-checkmark"></i>Squares</li>
+                      <li>
+                        <i class="lni lni-checkmark"></i> Polygons
+                      </li>
+                      <li><i class="lni lni-checkmark"></i> 3D space</li>
+                    </ul>
+                  </div> -->
+                </div>
+              </div>
+              <!-- <div class="course-content pt-50 pb-35">
+                <h3 class="mb-20">COURSE CONTENT</h3>
+                <div class="accordion" id="accordionExample">
+                  <div class="single-accordion">
+                    <div class="accordion-btn" id="headingOne">
+                      <button
+                        class="btn-block text-left"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#collapseOne"
+                        aria-expanded="true"
+                        aria-controls="collapseOne"
+                      >
+                        Unit 1
+                      </button>
+                    </div>
+                    <div
+                      id="collapseOne"
+                      class="collapse show"
+                      aria-labelledby="headingOne"
+                      data-parent="#accordionExample"
+                    >
+                      <div class="accordion-content">
+                        Basic topics covered in this module with video
+                        animations.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="single-accordion">
+                    <div class="accordion-btn" id="headingTwo">
+                      <button
+                        class="btn-block text-left collapsed"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#collapseTwo"
+                        aria-expanded="true"
+                        aria-controls="collapseTwo"
+                      >
+                        Unit 2
+                      </button>
+                    </div>
+                    <div
+                      id="collapseTwo"
+                      class="collapse"
+                      aria-labelledby="headingTwo"
+                      data-parent="#accordionExample"
+                    >
+                      <div class="accordion-content">
+                        Intermediate topics covered in this module.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="single-accordion">
+                    <div class="accordion-btn" id="headingThree">
+                      <button
+                        class="btn-block text-left collapsed"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#collapseThree"
+                        aria-expanded="true"
+                        aria-controls="collapseThree"
+                      >
+                        Unit 3
+                      </button>
+                    </div>
+                    <div
+                      id="collapseThree"
+                      class="collapse"
+                      aria-labelledby="headingThree"
+                      data-parent="#accordionExample"
+                    >
+                      <div class="accordion-content">
+                        Advanced topics covered in this module with sample
+                        tests.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="single-accordion">
+                    <div class="accordion-btn" id="headingFour">
+                      <button
+                        class="btn-block text-left collapsed"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#collapseFour"
+                        aria-expanded="true"
+                        aria-controls="collapseFour"
+                      >
+                        Unit 4
+                      </button>
+                    </div>
+                    <div
+                      id="collapseFour"
+                      class="collapse"
+                      aria-labelledby="headingFour"
+                      data-parent="#accordionExample"
+                    >
+                      <div class="accordion-content">
+                        Practical uses of the topic and when it will be
+                        encountered in real life.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div> -->
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="right-sidebar">
+              <div class="course-info mb-50">
+                <h3 class="mb-20 text-center">Course Information</h3>
+                <ul class="mb-30">
+                  <li class="d-flex justify-content-between">
+                    <span>Age-group</span>
+                    <span class="text-right">5-7 years</span>
+                  </li>
+                  <li class="d-flex justify-content-between">
+                    <span>Duration:</span>
+                    <span class="text-right">2 Weeks</span>
+                  </li>
+                  <li class="d-flex justify-content-between">
+                    <span>Difficulty:</span>
+                    <span class="text-right">Medium</span>
+                  </li>
+                  <!-- <li class="d-flex justify-content-between">
+                    <span>Coins that can be gained</span>
+                    <span class="text-right"
+                      ><a href="javascript:void(0)">100</a></span
+                    >
+                  </li> -->
+                  <!-- <li class="d-flex justify-content-between">
+                    <span>Tutor availability</span>
+                    <span class="text-right text-warning">Yes</span>
+                  </li> -->
+                </ul>
+                <a class="main-btn btn-hover" id="start_course">Start Course</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="footer" class="footer-area pt-170">
+		<div class="container">
+			<div class="row">
+				<div class="col-xl-3 col-lg-3 col-md-6">
+					<div class="footer-widget">
+						<a href="index.html" class="logo d-blok">
+							<img src="assets/images/logo.png" alt="">
+						</a>
+						<p>Maths Workbook</p>
+					</div>
+				</div>
+				<div class="col-xl-2 col-lg-2 offset-xl-1 offset-lg-1 col-md-6">
+					<div class="footer-widget">
+						<h5>Quick Links</h5>
+						<ul>
+							<li><a href="javascript:void(0)">Home</a></li>
+							<li><a href="javascript:void(0)">Courses</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-xl-2 col-lg-2 col-md-6">
+					<div class="footer-widget">
+						<h5>Our Course</h5>
+						<ul>
+							<li><a href="javascript:void(0)">Arithmetic</a></li>
+							<li><a href="javascript:void(0)">Speed Maths</a></li>
+							<li><a href="javascript:void(0)">Geometry</a></li>
+							<li><a href="javascript:void(0)">Statistics</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-xl-3 col-lg-3 col-md-6">
+					<div class="footer-widget">
+						<h5>Contact Us</h5>
+						<ul>
+							<li><p>Phone: +884-9273-3867</p></li>
+							<li><p>Email: hello@gmail.com</p></li>
+							<li><p>Address: Random Road<br> India</p></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="footer-credit">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="copy-right text-center text-md-left">
+							<p>Designed and Developed by Ritwik Jog and Rachana Chaudhari</p>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="footer-social">
+							<ul class="d-flex justify-content-md-end justify-content-center">
+								<li><a href="javascript:void(0)"><i class="lni lni-facebook-filled"></i></a></li>
+								<li><a href="javascript:void(0)"><i class="lni lni-twitter-filled"></i></a></li>
+								<li><a href="javascript:void(0)"><i class="lni lni-instagram-filled"></i></a></li>
+								<li><a href="javascript:void(0)"><i class="lni lni-linkedin-original"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+    <a href="#" class="back-to-top btn-hover"
+      ><i class="lni lni-chevron-up"></i
+    ></a>
+
+    <script
+      data-cfasync="false"
+      src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
+    ></script>
+    <script src="assets/js/bootstrap.bundle-5.0.0.alpha-min.js"></script>
+
+    <script src="assets/js/wow.min.js"></script>
+
+    <script src="assets/js/main.js"></script>
+
+    <!--====== Bootstrap js ======-->
+    <script src="assets/js/bootstrap.bundle-5.0.0.alpha-min.js"></script>
+
+    <script>
+
+
+    var course_name = sessionStorage.getItem("course_name");
+    var course_topic = document.getElementsByClassName("course_name");
+    var i;
+    for (i = 0; i < course_topic.length; i++) {
+    course_topic[i].innerHTML = course_name;
+    }
+
+    var username = sessionStorage.getItem("username");
+    console.log(username);
+    if(username==null || username=="null"){
+        document.getElementById("signout").style.display = "none";
+        document.getElementById("signin").style.display = "block";
+    }else{
+    console.log(username);
+        document.getElementById("signin").style.display = "none";
+        document.getElementById("signout").style.display = "block";
+    }
+
+    var start_btn = document.getElementById("start_course");
+    start_btn.onclick = function(){
+        sessionStorage.setItem("course_name", course_name)
+        window.location.href = "course-home-page.html"
+    }
+
+    </script>
+  </body>
+</html>
